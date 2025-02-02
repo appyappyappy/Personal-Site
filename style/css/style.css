@@ -358,6 +358,13 @@ pre {
 .logo {
 	float: left;
 }
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100px;
+    width: auto;
+    display: block;
+}
 .social {
 	float: right;
 	position: absolute;
@@ -368,7 +375,15 @@ pre {
 	float: left;
 	margin-left: 1px;
 	background: none;
-	padding: 0;
+	padding: 5px;
+	max-width: 100%;
+	max-height: 75%;
+}
+.social ul li img {
+	width: auto;
+	height: 55px;
+	object-fit: contain;
+	display: block;
 }
 #container {
 	width: 900px;
@@ -473,6 +488,22 @@ ul.flickr li img {
 	height: 58px;
 	padding: 0;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*	Image, centered on page
+/*-----------------------------------------------------------------------------------*/
+
+.center-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full viewport height */
+  }
+  
+  .center-image img {
+	max-width: 100%;
+	max-height: 100%;
+  }
 /*-----------------------------------------------------------------------------------*/
 /*	MENU
 /*-----------------------------------------------------------------------------------*/
