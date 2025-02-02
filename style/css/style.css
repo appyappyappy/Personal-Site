@@ -111,6 +111,8 @@ a {
 	text-decoration: none;
 	-webkit-transition:all 200ms ease-in;
 	-moz-transition:all 200ms ease-in;
+    -o-transition: all 0.3s ease; /* For Opera */
+    transition: all 0.3s ease; /* Standard property */
 }
 a:hover {
 	color: #d3573e;
@@ -237,6 +239,7 @@ a.button {
 	-webkit-transition:all 200ms ease-in;
 	-o-transition:all 200ms ease-in;
 	-moz-transition:all 200ms ease-in;
+    transition: all 0.3s ease; /* Standard property */
 }
 /* Webkit Fix */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
@@ -634,9 +637,6 @@ ul.flickr li img {
 	overflow: hidden;
 }
 
-.showcase-onepage {
-/**/
-}
 .showcase {
 	position: relative;
 	margin: 0 auto 33px auto;
@@ -931,6 +931,7 @@ div.showcase-tooltip {
 	-webkit-transition:none;
 	-o-transition:none;
 	-moz-transition:none;
+    transition: all 0.3s ease; /* Standard property */
 }
 #prev {
 	background-position: top left;
@@ -962,8 +963,7 @@ div.showcase-tooltip {
 	width: 400px;
 	height: 400px;
 }
-.form-container .loading span {
-}
+
 .form-container .response {
 	display: none;
 	margin: 15px 0 0 80px;
@@ -976,8 +976,7 @@ div.showcase-tooltip {
 	line-height: 17px;
 	width: 370px;
 }
-.forms {
-}
+
 .forms fieldset {
 	font-family: 'PTSansRegular';
 	font-size: 14px;
@@ -989,22 +988,6 @@ div.showcase-tooltip {
 .forms li.form-row {
 	margin-bottom: 20px;
 }
-.forms li.text-input-row {
-}
-.forms li.text-area-row {
-}
-.forms li.checkbox-row {
-}
-.forms li.radio-row {
-}
-.forms li.select-row {
-}
-.forms li.button-row {
-}
-.forms li.hidden-row {
-	display: none;
-}
-/* form input fields */
 
 .forms fieldset .text-input {
 	background-color: #fff;
@@ -1020,8 +1003,7 @@ div.showcase-tooltip {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-.forms fieldset .password {
-}
+
 .forms fieldset .text-area {
 	background-color: #fff;
 	border:1px solid #dedede;
@@ -1036,12 +1018,7 @@ div.showcase-tooltip {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-.forms fieldset .radio {
-}
-.forms fieldset .checkbox {
-}
-.forms fieldset .select {
-}
+
 .forms fieldset .btn-submit {
 	background: #5499c3 url(../images/button.png) repeat-x;
 	border: none;
@@ -1069,8 +1046,6 @@ div.showcase-tooltip {
 .forms .button-row span.error {
 	padding: 0;
 	display: none;
-}
-.forms li.focus {
 }
 .forms label {
 	display: block;
@@ -1287,8 +1262,7 @@ div.showcase-tooltip {
 /*	BLOG
 /*-----------------------------------------------------------------------------------*/
 
-.blog {
-}
+
 .content {
 	width: 595px;
 	float: left;
@@ -1428,6 +1402,7 @@ a.more {
 	-webkit-transition:none;
 	-o-transition:none;
 	-moz-transition:none;
+	transition: all 0.5s ease; /* Standard property */
 }
 .page-navi ul li a:hover, .page-navi ul li a.current {
 	text-decoration: none;
@@ -1570,6 +1545,7 @@ h2.trigger {
 	-webkit-transition:all 200ms ease-in;
 	-o-transition:all 200ms ease-in;
 	-moz-transition:all 200ms ease-in;
+	transition: all 0.5s ease; /* Standard property */
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -1646,6 +1622,7 @@ ul.tabs li a {
 	border-radius: 5px;
 	-webkit-transition:none;
 	-moz-transition:none;
+	transition: all 0.5s ease; /* Standard property */
 }
 ul.tabs li a:hover {
 	text-shadow: none;
@@ -1909,8 +1886,7 @@ ol.commentlist li {
 	font-size: 15px;
 	font-style: normal;
 }
-#comments .info h3 a:hover {
-}
+
 .comment-form {
 	margin-top: 40px;
 }
