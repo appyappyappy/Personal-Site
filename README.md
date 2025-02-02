@@ -12,3 +12,5 @@ The head sets all the imports up
     * type is a group of fonts, and has 3 css files and 3 folders to describe it
 * The jquery folders are pretty thick, so I'll just accept what it says on the tin (for now)
 The body has the actual site in it.
+
+Tracy jordan once said "Well larry, I'm no expert, but I've got a strong opinion"
