@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Will's Site</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="images/WillFace.png">
+<link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
+<script src="style/js/jquery-1.6.2.min.js"></script>
+<script src="style/js/jquery.aw-showcase.js"></script>
+<script src="style/js/jquery.jcarousel.js"></script>
+<script src="style/js/jquery.superbgimage.min.js"></script>
+<script src="style/js/jquery.slickforms.js"></script>
+<script>
+$(document).ready(function () {
+    $("#showcase").awShowcase({
+        content_width: 900,
+        content_height: 400,
+        auto: true,
+        interval: 3000,
+        continuous: false,
+        arrows: true,
+        buttons: true,
+        btn_numbers: true,
+        keybord_keys: true,
+        mousetrace: false,
+        /* Trace x and y coordinates for the mouse */
+        pauseonover: true,
+        stoponclick: false,
+        transition: 'fade',
+        /* hslide/vslide/fade */
+        transition_delay: 0,
+        transition_speed: 500,
+        show_caption: 'onload'
+		/* onload/onhover/show */
+    });
+});
+</script>
+</head>
+<body>
+<!-- This line sets the background image -->
+<div id="thumbs"> <a href="images/art/background.jpeg">1</a> </div>
+<div id="superbgimage">
+  <div class="scanlines"></div>
+</div>
+<div id="wrapper">
+  <div id="header">
+    <div class="logo opacity"><a href="index.html"><img src="images/Site_logo_v1.png" title="This is the site's logo. I made it myself! Click to go back to the main page."></a></div>
+    <div class="social">
+      <ul>
+        <li><a href="https://x.com/Appyappy1234"><img src="images/twitter_v2.png" title="This is the Twitter logo. Click to check out my twitter. What do you mean it's called X? I'm not calling it that. Because it's dumb. Just call it twitter, what am I going to X out a tweet? Am I supposted to gronk my fleem to make a funny joke?"></a></li>
+        <li><a href="https://github.com/appyappyappy"><img src="images/github_icon_v2.png" title="This is the Github logo. Click to check out my github, including the code for this site!"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="center-image">
+    <img src="images/404_image.png" title="This site is still under construction. You might have to check back later to see more.">
+  </div>
+<script src="style/js/scripts.js"></script>
+</body>
+</html>
