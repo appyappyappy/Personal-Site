@@ -500,7 +500,7 @@ ul.flickr li img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh; /* Full viewport height */
+	height: 70vh; /* 70% of viewport height */
   }
   
   .center-image img {
@@ -633,7 +633,7 @@ ul.flickr li img {
 /*-----------------------------------------------------------------------------------*/
 button {
  appearance: none;
- background-color: rgb(230, 230, 230);
+ background-color: rgb(255, 183, 89);
  border: 0.125em solid #1A1A1A;
  border-radius: 0.9375em;
  box-sizing: border-box;
