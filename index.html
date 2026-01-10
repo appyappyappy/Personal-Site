@@ -7,9 +7,9 @@
 <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
 <link rel="stylesheet" type="text/css" href="style/color/red.css" media="all">
 <link rel="stylesheet" type="text/css" media="screen" href="style/css/prettyPhoto.css">
-<link rel="stylesheet" type="text/css" href="style/type/museo.css" media="all">
-<link rel="stylesheet" type="text/css" href="style/type/ptsans.css" media="all">
-<link rel="stylesheet" type="text/css" href="style/type/charis.css" media="all">
+<link rel="stylesheet" type="text/css" href="images/type/museo.css" media="all">
+<link rel="stylesheet" type="text/css" href="images/type/ptsans.css" media="all">
+<link rel="stylesheet" type="text/css" href="images/type/charis.css" media="all">
 <!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all">
 <![endif]-->
@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all">
 <![endif]-->
 <script src="style/js/jquery-1.6.2.min.js"></script>
-<script src="style/js/ddsmoothmenu.js"></script>
+<!-- <script src="style/js/ddsmoothmenu.js"></script> -->
 <script src="style/js/transify.js"></script>
 <script src="style/js/jquery.aw-showcase.js"></script>
 <script src="style/js/jquery.jcarousel.js"></script>
@@ -111,33 +111,47 @@ $(document).ready(function () {
   <p>Email works if you need something specific (williamashcraft112@gmail.com), but the buttons in the top right are probably the best way to find what I'm up to. If you need to send me something really crazy, I'll send you an RSA key and we can just use email.</p>
 <div class="hr2"></div>
 <div id="footer">
-<!-- From Uiverse.io by Nawsome --> 
-<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-	<div class="wheel"></div>
-	<div class="hamster">
-		<div class="hamster__body">
-			<div class="hamster__head">
-				<div class="hamster__ear"></div>
-				<div class="hamster__eye"></div>
-				<div class="hamster__nose"></div>
-			</div>
-			<div class="hamster__limb hamster__limb--fr"></div>
-			<div class="hamster__limb hamster__limb--fl"></div>
-			<div class="hamster__limb hamster__limb--br"></div>
-			<div class="hamster__limb hamster__limb--bl"></div>
-			<div class="hamster__tail"></div>
-		</div>
-	</div>
-	<div class="spoke"></div>
+  <script> 
+  function changeImage()
+  {
+    var hamsterDiv = document.getElementById("alive-hamster");
+    hamsterDiv.style.display='none';
+    var deadDiv = document.getElementById("dead-hamster");
+    deadDiv.style.display='block';
+  }
+  </script>
+
+  <!-- From Uiverse.io by Nawsome --> 
+  <div id="alive-hamster">
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster" id="hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
+    </div>
+    <div class="center"> 
+      <p> This is steve! He keeps the site running using this wheel. He is very hard at work right now, and we're glad he's here. </p> 
+      <div class="clear"></div>
+      <img src="images/bigRedButton.jpg" style="width:30px;height:30px;" onclick="changeImage()">
+    </div>
+  </div>
+  <div class="center" id="dead-hamster" style="display: none;"> 
+      <div class="dead-hamster"> <img src="images/sleepingHamster.jpg" style="width:200px;height:200px;"> </div>
+      <p> Steve has died.</p>
+  </div>
 </div>
-<div class="center"> <p>
-  This is steve! He keeps the site running using this wheel.
-</p> </div>
-
-
-</div>
-
-
 
 <!-- closes the wrapper div -->
 </div> 
