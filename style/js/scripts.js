@@ -19,15 +19,15 @@ $(function() {
 
 });
 /*-----------------------------------------------------------------------------------*/
-/*	MENU
+/*	MENU - This function has been removed, intentionally. The new button structure uses buttons at the top of the site, so its not needed. The comments have been left here in case I want to go back.
 /*-----------------------------------------------------------------------------------*/
 
-ddsmoothmenu.init({
-	mainmenuid: "menu",
-	orientation: 'h',
-	classname: 'menu',
-	contentsource: "markup"
-})
+// ddsmoothmenu.init({
+// 	mainmenuid: "menu",
+// 	orientation: 'h',
+// 	classname: 'menu',
+// 	contentsource: "markup"
+// })
 
 
 /*-----------------------------------------------------------------------------------*/

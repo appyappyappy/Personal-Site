@@ -9,6 +9,7 @@ The head sets all the imports up
     * css/PrettyPhoto implements the sprite sheet for alot of the buttons
     * type is a group of fonts, and has 3 css files and 3 folders to describe it
 * The jquery folders are pretty thick, so I'll just accept what it says on the tin (for now)
-The body has the actual site in it.
+* There are cleaner ways to implement the top menu across all pages, but I have no clue how they work. Current solution is to have the same code copied and pasted, so I'll need to carefully version control it.
+* The body has the actual site in it.
 
 Tracy jordan once said "Well larry, I'm no expert, but I've got a strong opinion"
