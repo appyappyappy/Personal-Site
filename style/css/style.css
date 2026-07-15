@@ -219,6 +219,18 @@ img.right {
 	float: right;
 	margin: 10px 0 5px 10px;
 }
+img.center {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 95%
+}
+img.center-small{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 25%
+}
 .lite1 {
 	color: #4d87ab;
 }
