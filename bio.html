@@ -5,11 +5,34 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="images/WillFace.png">
 <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="style/color/red.css" media="all">
+<link rel="stylesheet" type="text/css" media="screen" href="style/css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="images/type/museo.css" media="all">
+<link rel="stylesheet" type="text/css" href="images/type/ptsans.css" media="all">
+<link rel="stylesheet" type="text/css" href="images/type/charis.css" media="all">
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all">
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all">
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all">
+<![endif]-->
 <script src="style/js/jquery-1.6.2.min.js"></script>
+<!-- <script src="style/js/ddsmoothmenu.js"></script> -->
+<script src="style/js/transify.js"></script>
 <script src="style/js/jquery.aw-showcase.js"></script>
 <script src="style/js/jquery.jcarousel.js"></script>
+<script src="style/js/carousel.js"></script>
+<script src="style/js/jquery.prettyPhoto.js"></script>
 <script src="style/js/jquery.superbgimage.min.js"></script>
 <script src="style/js/jquery.slickforms.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+    $('.forms').dcSlickForms();
+});
+</script>
 <script>
 $(document).ready(function () {
     $("#showcase").awShowcase({
@@ -35,9 +58,13 @@ $(document).ready(function () {
     });
 });
 </script>
+<!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
 </head>
+
 <body>
 <div id="wrapper">
+<!-- the wrapper id sets the margins -->
+
 <!------------------------------------------------------------------------------------------------->
 <!--THIS IS THE CODE THAT HANDLES THE HEADER ON THE SITE, ALL PAGES SHOULD HAVE THE SAME CODE!!! -->
 <!------------------------------------------------------------------------------------------------->
@@ -68,9 +95,30 @@ $(document).ready(function () {
 <!----------------------------------------------------------------------------------------------------->
 <!--ABOVE ME IS THE CODE THAT HANDLES THE HEADER ON THE SITE, ALL PAGES SHOULD HAVE THE SAME CODE!!! -->
 <!----------------------------------------------------------------------------------------------------->
+<div id="container" class="opacity">
+<div class="two-third">
+  <div class="intro">Hi! I'm Will,</div>
+  <p>and this is my website. Thanks for stopping by, but right now everything is a bit disorganized. Hopefully, you can find your way around while we get things put together. While you wait, feel free to check out my blog.</p>
 </div>
-  <div class="center-image">
-    <img src="images/404_image.png" title="This site is still under construction. You might have to check back later to see more.">
-  </div>
+<!-- William Ashcraft is a famous and very smart scientist according to the first line on his own website. -->
+<div class="one-third last">
+  <img src="images/professional selfie.JPG" alt="Photo of me" style="width:250px;height:250px;">
+</div>
+<div class="clear"></div>
+<div class="hr2"></div>
+  <h2 style="color:black">Who am I?</h2>
+  <p>I'm William Ashcaft, but most folks call me Will. I'm a masters student at the University of Rochester working toward an MS in Material Science, doing research with the McCamant group, focusing on electron decoherence and raman spectroscopy. I've got a few hobbies, including programming, pokemon and music, and I'm hoping that this site will show some of them off. You can read more about my professional skills <a href="professional/CV_2026_Spring.pdf" download="WilliamAshcraftCV">here</a></p>
+<div class="clear"></div>
+<div class="hr2"></div>
+  <h2 style="color:black">Where can I find you?</h2>
+  <p>
+    The buttons in the top right are probably the best way to find what I'm up to, but Email works if you need something specific (williamashcraft112@gmail.com).
+    If you need to send me something really crazy, I'll send you an RSA key and we can just use email.
+  </p>
+<div class="hr2"></div>
+</div>
+
+<!-- closes the wrapper div -->
+</div> 
 </body>
 </html>
